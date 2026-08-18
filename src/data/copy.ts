@@ -1,3 +1,6 @@
+import heroBannerImg from '../assets/images/lab_hero_banner_1787044826436.jpg';
+import outreachImg from '../assets/images/sleek_lab_outreach_1787045851694.jpg';
+
 export const APP_CONFIG = {
   name: 'LAB LINIK SERVICES',
   tagline: 'Reliable Locum Medical Laboratory Professionals — When You Need Them Most.',
@@ -6,8 +9,8 @@ export const APP_CONFIG = {
   whatsappInternational: '2348165686093',
   formattedPhone: '+234 816 568 6093',
   email: 'contact@lablinik.com',
-  heroImage: '/src/assets/images/lab_hero_banner_1787044826436.jpg',
-  outreachImage: '/src/assets/images/sleek_lab_outreach_1787045851694.jpg',
+  heroImage: heroBannerImg,
+  outreachImage: outreachImg,
   googleSheetWebhookUrl: 'https://script.google.com/macros/s/AKfycbzXiEFDhdIzuj0z8WNON_cgwFrPbc1G5wQt3e_yUbRPAzrjsWAzPYiu6Z1Vw5datz7U/exec',
 };
 
