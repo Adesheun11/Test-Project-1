@@ -103,6 +103,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToForm }) => {
                 src={APP_CONFIG.heroImage}
                 alt="Lab Linik Medical Laboratory Scientists at work"
                 referrerPolicy="no-referrer"
+                loading="eager"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/images/hero.jpg' && !target.src.includes('unsplash.com')) {
+                    target.src = '/images/hero.jpg';
+                  } else if (!target.src.includes('unsplash.com')) {
+                    target.src = 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80';
+                  }
+                }}
                 className="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />

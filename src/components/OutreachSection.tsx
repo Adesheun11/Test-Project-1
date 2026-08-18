@@ -18,6 +18,15 @@ export const OutreachSection: React.FC<OutreachSectionProps> = ({ onScrollToForm
                 src={APP_CONFIG.outreachImage}
                 alt="Medical Outreach Laboratory Team at Community Screening"
                 referrerPolicy="no-referrer"
+                loading="eager"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/images/outreach.jpg' && !target.src.includes('unsplash.com')) {
+                    target.src = '/images/outreach.jpg';
+                  } else if (!target.src.includes('unsplash.com')) {
+                    target.src = 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80';
+                  }
+                }}
                 className="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
