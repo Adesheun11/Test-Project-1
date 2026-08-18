@@ -1,0 +1,6 @@
+{
+  "name": "Lab Linik Services",
+  "description": "Reliable Locum Medical Laboratory Professionals on-demand booking platform with automated Google Sheet synchronization and instant WhatsApp dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
